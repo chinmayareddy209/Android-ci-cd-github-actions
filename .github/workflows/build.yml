@@ -108,8 +108,8 @@ jobs: # groups the jobs to be executed in this workflow
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ github.run_id  }}
+          release_name: Release ${{ github.run_id  }}
 
       - name: Upload Release APK
         id: upload_release_asset
