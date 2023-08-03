@@ -1,51 +1,6 @@
 # Continuous Integration and Continuous Delivery for Android Projects
 
-## [Work In Progress- feature branch]
-
-<p align="center">
-<img  src="https://img.shields.io/badge/-KOTLIN-3fb55f?logo=kotlin&logoColor=white&style=for-the-badge">
-<img  src="https://img.shields.io/badge/-ANDROID-3fb55f?logo=android&logoColor=white&style=for-the-badge">
-
-This is a simple android application that will be used to demo android CI/CD process using [GitHub Action](https://github.com/features/actions) as part of [ACL session](https://docs.google.com/presentation/d/1KBKK27I8Ji3m7Xs76G-uuzRhD8JY1NfVySQSWd0KT3A/edit?usp=sharing).
-
-`Continuous integration` is a practice of integrating source code into a shared repository frequently, then each commit is verified by an automated system to check for errors or get reports on code quality.
-
-Examples of continuous integration processes for android projects include:
-
-- Performing build.
-- Linting - Analyzing source code to check for language syntax violation.
-- Executing tests  ie. unit tests and instrumentation tests.
-- Generating reports. Eg tests reports, lint reports etc.
-
-`Continuous delivery` is a practice of getting changes(ie. new features, bug fixes, configuration changes) into production or into the users’/testers’ hands safely and quickly or frequently.
-
-Examples of continuous delivery processes for android projects include:
-
-- Creating a [GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).
-- Deploying to [Firebase App Distribution](https://firebase.google.com/docs/app-distribution).
-- Deploying to Google Play Store.
-- Updating automated documentation. Eg. when using automated documentation tools like [Dokka](https://github.com/Kotlin/dokka).
-
 ## CI/CD Platforms/Tools
-
-<p align="center">
-<img src="images/github_action.png" width="200"/>  <img src="images/gitlab_ci.png" width="200"/> <img src="images/jenkins.png" width="280"/>
-
-<p align="center">
-<img src="images/circle_ci.png" width="230"/>  <img src="images/travis_ci.png" width="150"/> <img src="images/team_city.png" width="280"/>
-
-1. GitHub Actions.
-2. [Gitlab CI/CD](https://docs.gitlab.com/ee/ci/)
-3. [Jenkins](https://www.jenkins.io/)
-4. [Circle CI](https://circleci.com/)
-5. [Travis CI](https://travis-ci.org/)
-6. [Team City](https://www.jetbrains.com/teamcity/)
-
-## Getting Started
-
-Simplified overview of the project's CI/CD pipeline:
-
-<img src="images/workflow.png"/>
 
 ## Intro
 
@@ -262,6 +217,3 @@ firebase-deploy:
           file: Android-CI-CD/app-debug.apk
 ```
 
-## Deploying to Google Play Store
-
-// ToDo ?:(
